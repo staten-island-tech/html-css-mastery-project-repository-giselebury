@@ -1,16 +1,23 @@
 @import "./_variables.scss";
 
-html{
+body{
+    background-color: color(primary);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 62.5%;
 }
 
-body{
-    background-color: color(primary);
+.title-parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 100%;
 }
 
-.title-parent{
-    clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
+.title-parent-image{
+    clip-path: polygon(0% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%);
+    height: 20vh;
+    width: 100%;
 }
