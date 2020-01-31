@@ -25,7 +25,7 @@ body{
 
 .title-child-image{
     clip-path: polygon(0% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%);
-    height: 20vh;
+    height: 24vh;
     width: 100%;
 }
 
@@ -40,12 +40,28 @@ body{
     font-family: 'Bangers', cursive;
 }
 
-.section-divider{
-    height: 0;
-    width: 0;
-    border-left: 100px solid #ff4136;
-    border-right: 100px solid transparent;
-    border-bottom: 100px solid transparent;
-    border-top: 100px solid transparent;
-    color: color(secondary);
+.section-divider-1{
+    width: 19rem;
+    height: 2rem;
+    background-color: color(secondary);
+    transform: skewY(9deg);
+}
+
+.section-divider-2{
+    width: 19.2rem;
+    height: 2rem;
+    background-color: color(secondary);
+    transform: skewY(-9deg);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.title-divider{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }

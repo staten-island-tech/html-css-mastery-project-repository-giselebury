@@ -31,7 +31,7 @@ body {
 .title-child-image {
   -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%);
           clip-path: polygon(0% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%);
-  height: 20vh;
+  height: 24vh;
   width: 100%;
 }
 
@@ -47,13 +47,45 @@ body {
   font-family: 'Bangers', cursive;
 }
 
-.section-divider {
-  height: 0;
-  width: 0;
-  border-left: 100px solid #ff4136;
-  border-right: 100px solid transparent;
-  border-bottom: 100px solid transparent;
-  border-top: 100px solid transparent;
-  color: white;
+.section-divider-1 {
+  width: 19rem;
+  height: 2rem;
+  background-color: white;
+  -webkit-transform: skewY(9deg);
+          transform: skewY(9deg);
+}
+
+.section-divider-2 {
+  width: 19.2rem;
+  height: 2rem;
+  background-color: white;
+  -webkit-transform: skewY(-9deg);
+          transform: skewY(-9deg);
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.title-divider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 /*# sourceMappingURL=main.css.map */
