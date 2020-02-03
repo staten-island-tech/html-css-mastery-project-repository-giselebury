@@ -1,4 +1,5 @@
 @import "./_variables.scss";
+@import "./_header.scss";
 
 html{
     margin: 0;
@@ -13,55 +14,3 @@ body{
     background-color: color(primary);
 } 
 
-.title-parent{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 20vh;
-    width: 100%;
-    position: relative;
-}
-
-.title-child-image{
-    clip-path: polygon(0% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%);
-    height: 24vh;
-    width: 100%;
-}
-
-.title-child-title{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: color(secondary);
-    letter-spacing: .5rem;
-    font-size: 2rem ;
-    font-family: 'Bangers', cursive;
-}
-
-.section-divider-1{
-    width: 19rem;
-    height: 2rem;
-    background-color: color(secondary);
-    transform: skewY(9deg);
-}
-
-.section-divider-2{
-    width: 19.2rem;
-    height: 2rem;
-    background-color: color(secondary);
-    transform: skewY(-9deg);
-}
-
-.header{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-.title-divider{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-}

@@ -1,0 +1,66 @@
+@import "./_variables.scss";
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   
+}
+
+.title-parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 20vh;
+    width: 100%;
+    position: relative; 
+    background-image: url(../media/barcelonaa.jpg);
+    clip-path: polygon(0% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%);
+    margin: 0;
+}
+
+.title-child-image{
+
+    height: 24vh;
+    width: 100%;
+}
+
+.title-child-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: color(secondary);
+    letter-spacing: .5rem;
+    font-size: 2rem ;
+    font-family: 'Bangers', cursive;
+}
+
+.section-divider-1{
+    width: 51%;
+    height: 2rem;
+    background-color: color(secondary);
+    transform: skewY(9deg);
+    @include tablet{
+        transform: skewY(6deg);
+    }
+}
+
+.section-divider-2{
+    width: 51%;
+    height: 2rem;
+    background-color: color(secondary);
+    transform: skewY(-9deg);
+    @include tablet{
+        transform: skewY(-6deg);
+    }
+}
+
+
+.title-divider{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0;
+}

@@ -1,15 +1,14 @@
-html {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-size: 62.5%;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #C67162;
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .title-parent {
@@ -26,11 +25,13 @@ body {
   height: 20vh;
   width: 100%;
   position: relative;
+  background-image: url(../media/barcelonaa.jpg);
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%);
+          clip-path: polygon(0% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%);
+  margin: 0;
 }
 
 .title-child-image {
-  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%);
-          clip-path: polygon(0% 0%, 100% 0, 100% 88%, 50% 100%, 0 88%);
   height: 24vh;
   width: 100%;
 }
@@ -48,32 +49,33 @@ body {
 }
 
 .section-divider-1 {
-  width: 19rem;
+  width: 51%;
   height: 2rem;
   background-color: white;
   -webkit-transform: skewY(9deg);
           transform: skewY(9deg);
 }
 
+@media (min-width: 600px) {
+  .section-divider-1 {
+    -webkit-transform: skewY(6deg);
+            transform: skewY(6deg);
+  }
+}
+
 .section-divider-2 {
-  width: 19.2rem;
+  width: 51%;
   height: 2rem;
   background-color: white;
   -webkit-transform: skewY(-9deg);
           transform: skewY(-9deg);
 }
 
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+@media (min-width: 600px) {
+  .section-divider-2 {
+    -webkit-transform: skewY(-6deg);
+            transform: skewY(-6deg);
+  }
 }
 
 .title-divider {
@@ -87,5 +89,22 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin: 0;
+  position: absolute;
+  height: 20rem;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #C67162;
 }
 /*# sourceMappingURL=main.css.map */
