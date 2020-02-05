@@ -1,0 +1,29 @@
+@import "./variables";
+
+.barca-visit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0rem;
+}
+
+.barca-visit-parent{
+    height: 40vh;
+
+}
+
+.barca-visit-title{
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+    color: color(secondary);
+}
+
+h1{
+    margin: .5rem;
+}
+
+.visit-image{
+    height: 30vh;
+}
+
