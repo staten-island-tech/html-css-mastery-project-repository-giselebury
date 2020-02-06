@@ -1,6 +1,6 @@
 @import "./variables";
 
-.barca-visit{
+/* .barca-visit{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +17,7 @@
     font-family: 'Bangers', cursive;
     font-size: 2rem;
     color: color(secondary);
-}
+} */
 
 h1{
     margin: .5rem;
@@ -25,5 +25,51 @@ h1{
 
 .visit-image{
     height: 30vh;
+} 
+
+.visit-flip-card{
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.card-side{
+    height: 500px;
+    width: 300px;
+    font-size: 15px;
+    color: white;
+    backface-visibility: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
+}
+
+.visit-image-front{
+    background-image: url("../media/parkguell.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 1s ease-in;
+}
+
+.visit-image-back{
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transform: rotateY(-180deg);
+    transition: all 1s ease-out;
+}
+
+.visit-flip-card:hover .visit-image-front{
+    transform: rotateY(-180deg);
+}
+
+.visit-flip-card:hover .visit-image-back{
+    transform: rotateY(0deg);
+} 
