@@ -5,11 +5,13 @@
 }
 
 .barca-visit-parent{
-    height: 50vh;
+    height: 85vh;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+
+
 
 .barca-visit-title{
     font-family: 'Bangers', cursive;
@@ -69,3 +71,77 @@ h1{
 .visit-flip-card:hover .visit-image-back{
     transform: rotateY(0deg);
 } 
+
+.visit-flip-card-2{
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    margin-top: 1rem;
+    height: 50vh;
+    width: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visit-image-front-2{
+    background-image: url("../media/lasagrada.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 1;
+    transition: all .8s ease-in;
+}
+
+.visit-image-back-2{
+    position: absolute;
+    z-index: 0;
+    transform: rotateY(-180deg);
+    transition: all .8s ease-out;
+}
+
+.visit-flip-card-2:hover .visit-image-front-2{
+    transform: rotateY(-180deg);
+}
+
+.visit-flip-card-2:hover .visit-image-back-2{
+    transform: rotateY(0deg);
+} 
+
+.section-divider-1{
+    width: 51%;
+    height: 2rem;
+    background-color: color(secondary);
+    transform: skewY(7deg);
+    @include tablet{
+        transform: skewY(6deg);
+        height: 4rem;
+    }
+    @include desktop{
+        transform: skewY(4deg);
+        height: 5rem;
+    }
+}
+
+.section-divider-2{
+    width: 51%;
+    height: 2rem;
+    background-color: color(secondary);
+    transform: skewY(-7deg);
+    @include tablet{
+        transform: skewY(-6deg);
+        height: 4rem;
+    }
+    @include desktop{
+        transform: skewY(-4deg);
+        height: 5rem;
+    }
+}
+
+
+.title-divider{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0;
+}

@@ -134,7 +134,7 @@
 }
 
 .barca-visit-parent {
-  height: 50vh;
+  height: 85vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,6 +218,116 @@ h1 {
 .visit-flip-card:hover .visit-image-back {
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
+}
+
+.visit-flip-card-2 {
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  margin-top: 1rem;
+  height: 50vh;
+  width: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.visit-image-front-2 {
+  background-image: url("../media/lasagrada.jpg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: 1;
+  -webkit-transition: all .8s ease-in;
+  transition: all .8s ease-in;
+}
+
+.visit-image-back-2 {
+  position: absolute;
+  z-index: 0;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  -webkit-transition: all .8s ease-out;
+  transition: all .8s ease-out;
+}
+
+.visit-flip-card-2:hover .visit-image-front-2 {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.visit-flip-card-2:hover .visit-image-back-2 {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.section-divider-1 {
+  width: 51%;
+  height: 2rem;
+  background-color: white;
+  -webkit-transform: skewY(7deg);
+          transform: skewY(7deg);
+}
+
+@media (min-width: 600px) {
+  .section-divider-1 {
+    -webkit-transform: skewY(6deg);
+            transform: skewY(6deg);
+    height: 4rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .section-divider-1 {
+    -webkit-transform: skewY(4deg);
+            transform: skewY(4deg);
+    height: 5rem;
+  }
+}
+
+.section-divider-2 {
+  width: 51%;
+  height: 2rem;
+  background-color: white;
+  -webkit-transform: skewY(-7deg);
+          transform: skewY(-7deg);
+}
+
+@media (min-width: 600px) {
+  .section-divider-2 {
+    -webkit-transform: skewY(-6deg);
+            transform: skewY(-6deg);
+    height: 4rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .section-divider-2 {
+    -webkit-transform: skewY(-4deg);
+            transform: skewY(-4deg);
+    height: 5rem;
+  }
+}
+
+.title-divider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0;
 }
 
 html {
