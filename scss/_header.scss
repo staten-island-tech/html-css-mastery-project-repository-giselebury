@@ -12,7 +12,7 @@
         height: 35vh;
     }
     @include desktop{
-        height: 60%;
+        height: 70%;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -44,6 +44,13 @@
     } 
 }
 
+.title-divider{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 2;
+}
+ 
 .section-divider-1{
     width: 51%;
     height: 2rem;
@@ -75,10 +82,3 @@
 }
 
 
-.title-divider{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin: 0;
-}
- 
