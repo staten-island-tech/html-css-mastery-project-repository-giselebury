@@ -6,7 +6,7 @@
 }
 
 .barca-visit-parent{
-    height: 70vh;    
+    height: 90vh;    
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -14,12 +14,13 @@
     @include desktop{
         flex-direction: row;
         align-content: space-between;
-        height: 70vh;
+        align-items: center;
+        height: 40vh;
     }
     @include tablet{
         flex-direction: row;
         align-items: flex-start;
-        height: 40vh;
+        height: 35vh;
     }
 }
 
@@ -31,6 +32,7 @@
     color: color(secondary);
     text-align: center;
     height: 2vh;
+    letter-spacing: .2rem;
     @include desktop{
         font-size: 4rem;
         height: 15vh;
@@ -46,7 +48,10 @@ h1{
 }
 
 .visit-image{
-    height: 30vh;
+    height: 12vh;
+    @include desktop{
+        height: 30vh;
+    }
 } 
 
 .visit-flip-card{
@@ -54,20 +59,25 @@ h1{
     -moz-perspective: 150rem;
     position: relative;
     margin-top: 1rem;
-    height: 50vh;
+    height: 30vh;
     width: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .card-side{
-    height: 30rem;
-    width: 20rem;
+    height: 21rem;
+    width: 15rem;
     font-size: 15px;
     color: white;
     backface-visibility: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
+    @include desktop{
+        height: 30rem;
+        width: 20rem;
+    }
 }
 
 .visit-image-front{
@@ -99,7 +109,7 @@ h1{
     -moz-perspective: 150rem;
     position: relative;
     margin-top: 1rem;
-    height: 50vh;
+    height: 30vh;
     width: 30vh;
     display: flex;
     align-items: center;
@@ -135,11 +145,12 @@ h1{
     -moz-perspective: 150rem;
     position: relative;
     margin-top: 1rem;
-    height: 50vh;
+    height: 30vh;
     width: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .visit-image-front-3{
