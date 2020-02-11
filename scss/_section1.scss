@@ -11,16 +11,18 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
-    @include desktop{
-        flex-direction: row;
-        align-content: space-between;
-        align-items: center;
-        height: 40vh;
-    }
+
     @include tablet{
         flex-direction: row;
         align-items: flex-start;
         height: 35vh;
+    }    
+    @include desktop{
+        height: 65vh;
+        flex-direction: row;
+        align-content: space-between;
+        align-items: center;
+        margin: 2rem;
     }
 }
 
@@ -33,13 +35,14 @@
     text-align: center;
     height: 2vh;
     letter-spacing: .2rem;
-    @include desktop{
-        font-size: 4rem;
-        height: 15vh;
-    }
+
     @include tablet{
         font-size: 3rem;
         height: 6vh;
+    }    
+    @include desktop{
+        font-size: 4rem;
+        height: 15vh;
     }
 } 
 
@@ -49,8 +52,11 @@ h1{
 
 .visit-image{
     height: 12vh;
-    @include desktop{
+    @include tablet{
         height: 30vh;
+    }
+    @include desktop{
+        height: 60vh;
     }
 } 
 
@@ -114,6 +120,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .visit-image-front-2{
