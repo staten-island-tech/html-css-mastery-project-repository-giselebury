@@ -1,1 +1,49 @@
-@import "._variables.scss";
+@import "./_variables.scss";
+
+.activities{
+    margin: 0rem;
+    height: 70vh;
+}
+
+.activities-title{
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+    color: color(secondary);
+    text-align: center;
+    height: 2vh;
+    letter-spacing: .2rem;
+    margin-top: 2rem;
+    height: 8vh;
+
+    @include tablet{
+        font-size: 3rem;
+        height: 6vh;
+        margin-top: 1rem;
+    }    
+    @include desktop{
+        font-size: 4rem;
+        height: 10vh;
+        margin-top: 2rem;
+    }
+}
+
+.activity-one{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20% 50%);
+    background-color: color(primary-variant);
+    height: 15vh;
+    margin-bottom: 2rem;
+}
+
+.activity-two{
+    clip-path: polygon(100% 0, 80% 50%, 100% 100%, 0 100%, 0 0);
+    background-color: color(primary-variant);
+    height: 15vh;
+    margin-bottom: 2rem;
+}
+
+.activity-three{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20% 50%);
+    background-color: color(primary-variant);
+    height: 15vh;
+    margin-bottom: 2rem;
+}
