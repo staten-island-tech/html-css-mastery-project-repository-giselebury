@@ -29,21 +29,50 @@
 
 .activity-one{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20% 50%);
-    background-color: color(primary-variant);
+    background-color: color(complementary);
     height: 15vh;
     margin-bottom: 2rem;
+
+}
+
+.activity-one-content{
+    height: 12rem;
+    margin-left: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;   
+    text-align: center;
+}
+
+.activity-one-image{
+    height: 11rem;
 }
 
 .activity-two{
     clip-path: polygon(100% 0, 80% 50%, 100% 100%, 0 100%, 0 0);
-    background-color: color(primary-variant);
+    background-color: color(secondary);
     height: 15vh;
     margin-bottom: 2rem;
 }
 
+.activity-two-content{
+    height: 12rem;
+    margin-right: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;   
+    text-align: center;
+}
+
+.activity-two-image{
+    height: 11rem;
+}
+
 .activity-three{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20% 50%);
-    background-color: color(primary-variant);
+    background-color: color(complementary);
     height: 15vh;
     margin-bottom: 2rem;
 }

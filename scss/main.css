@@ -515,23 +515,67 @@ h1 {
 .activity-one {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20% 50%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20% 50%);
-  background-color: #ED9D8F;
+  background-color: #BCE5D4;
   height: 15vh;
   margin-bottom: 2rem;
+}
+
+.activity-one-content {
+  height: 12rem;
+  margin-left: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+}
+
+.activity-one-image {
+  height: 11rem;
 }
 
 .activity-two {
   -webkit-clip-path: polygon(100% 0, 80% 50%, 100% 100%, 0 100%, 0 0);
           clip-path: polygon(100% 0, 80% 50%, 100% 100%, 0 100%, 0 0);
-  background-color: #ED9D8F;
+  background-color: white;
   height: 15vh;
   margin-bottom: 2rem;
+}
+
+.activity-two-content {
+  height: 12rem;
+  margin-right: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+}
+
+.activity-two-image {
+  height: 11rem;
 }
 
 .activity-three {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20% 50%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20% 50%);
-  background-color: #ED9D8F;
+  background-color: #BCE5D4;
   height: 15vh;
   margin-bottom: 2rem;
 }
