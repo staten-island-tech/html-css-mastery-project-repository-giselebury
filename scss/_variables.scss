@@ -1,7 +1,7 @@
 $colors:(
     primary:#C67162,
     secondary: white,
-    complementary:#BCE5D4,
+    complementary:rgba(232, 176, 166, 0.514),
 );
 
 $desktop: 1100px;
@@ -27,4 +27,38 @@ $tablet: 600px;
     @media (min-width: #{$tablet}) {
       @content;
     }
+  }
+
+  @mixin divider {
+   
+  .section-divider-1{
+      width: 51%;
+      height: 2rem;
+      background-color: color(secondary);
+      transform: skewY(7deg);
+      @include tablet{
+          transform: skewY(6deg);
+          height: 4rem;
+      }
+      @include desktop{
+          transform: skewY(4deg);
+          height: 5rem;
+      }
+  }
+  
+  .section-divider-2{
+      width: 51%;
+      height: 2rem;
+      background-color: color(secondary);
+      transform: skewY(-7deg);
+      @include tablet{
+          transform: skewY(-6deg);
+          height: 4rem;
+      }
+      @include desktop{
+          transform: skewY(-4deg);
+          height: 5rem;
+      }
+  }
+  
   }

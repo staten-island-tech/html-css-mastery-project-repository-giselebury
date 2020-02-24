@@ -203,7 +203,7 @@ h1{
     transform: rotateY(0deg);
 } 
 
-.section-divider-1{
+/* .section-divider-1{
     width: 51%;
     height: 2rem;
     background-color: color(secondary);
@@ -232,11 +232,12 @@ h1{
         height: 5rem;
     }
 }
-
+ */
 
 .title-divider{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     margin: 0;
+    @include divider;
 }
