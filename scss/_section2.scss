@@ -2,7 +2,7 @@
 
 .activities{
     margin: 0rem;
-    height: 70vh;
+    height: 65vh;
 }
 
 .activities-title{
@@ -36,7 +36,7 @@
         height: 18rem;
     }
     @include desktop{
-        height: 20rem;
+        height: 25rem;
     }
 
 }
@@ -54,7 +54,8 @@
         margin-left: 18rem;
     }
     @include desktop{
-        height: 20.2rem;
+        height: 25.2rem;
+        margin-left: 22rem;
     }
 }
 
@@ -64,7 +65,7 @@
         height: 17rem;
     }
     @include desktop{
-        height: 18rem;
+        height: 22rem;
     }
 }
 
@@ -77,7 +78,7 @@
         height: 18rem;
     }
     @include desktop{
-        height: 20rem;
+        height: 25rem;
     }
 
 }
@@ -95,7 +96,8 @@
         margin-right: 18rem;
     }
     @include desktop{
-        height: 20.2rem;
+        height: 25.2rem;
+        margin-right: 22rem;
     }
 }
 
@@ -110,7 +112,7 @@
         margin-bottom: 4rem;
     }
     @include desktop{
-        height: 20rem;
+        height: 25rem;
     }
 
 }
@@ -128,7 +130,8 @@
         margin-left: 18rem;
     }
     @include desktop{
-        height: 20.2rem;
+        height: 25.2rem;
+        margin-left: 22rem;
     }
 }
 

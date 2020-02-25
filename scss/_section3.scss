@@ -1,0 +1,27 @@
+@import "./_variables.scss";
+
+.food{
+    margin: 0rem;
+    height: 70vh;
+}
+
+.food-title{
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+    color: color(secondary);
+    text-align: center;
+    height: 2vh;
+    letter-spacing: .2rem;
+    margin-top: 1rem;
+
+    @include tablet{
+        font-size: 3rem;
+        height: 6vh;
+        margin-top: 1rem;
+    }    
+    @include desktop{
+        font-size: 4rem;
+        height: 10vh;
+        margin-top: 2rem;
+    }
+}

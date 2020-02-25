@@ -543,7 +543,7 @@ h1 {
 
 .activities {
   margin: 0rem;
-  height: 70vh;
+  height: 65vh;
 }
 
 .activities-title {
@@ -589,7 +589,7 @@ h1 {
 
 @media (min-width: 1100px) {
   .activity-one {
-    height: 20rem;
+    height: 25rem;
   }
 }
 
@@ -620,7 +620,8 @@ h1 {
 
 @media (min-width: 1100px) {
   .activity-one-content {
-    height: 20.2rem;
+    height: 25.2rem;
+    margin-left: 22rem;
   }
 }
 
@@ -636,7 +637,7 @@ h1 {
 
 @media (min-width: 1100px) {
   .activity-image {
-    height: 18rem;
+    height: 22rem;
   }
 }
 
@@ -656,7 +657,7 @@ h1 {
 
 @media (min-width: 1100px) {
   .activity-two {
-    height: 20rem;
+    height: 25rem;
   }
 }
 
@@ -687,7 +688,8 @@ h1 {
 
 @media (min-width: 1100px) {
   .activity-two-content {
-    height: 20.2rem;
+    height: 25.2rem;
+    margin-right: 22rem;
   }
 }
 
@@ -708,7 +710,7 @@ h1 {
 
 @media (min-width: 1100px) {
   .activity-three {
-    height: 20rem;
+    height: 25rem;
   }
 }
 
@@ -739,7 +741,8 @@ h1 {
 
 @media (min-width: 1100px) {
   .activity-three-content {
-    height: 20.2rem;
+    height: 25.2rem;
+    margin-left: 22rem;
   }
 }
 
@@ -802,6 +805,37 @@ h1 {
     -webkit-transform: skewY(-4deg);
             transform: skewY(-4deg);
     height: 5rem;
+  }
+}
+
+.food {
+  margin: 0rem;
+  height: 70vh;
+}
+
+.food-title {
+  font-family: 'Bangers', cursive;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  height: 2vh;
+  letter-spacing: .2rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 600px) {
+  .food-title {
+    font-size: 3rem;
+    height: 6vh;
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .food-title {
+    font-size: 4rem;
+    height: 10vh;
+    margin-top: 2rem;
   }
 }
 
