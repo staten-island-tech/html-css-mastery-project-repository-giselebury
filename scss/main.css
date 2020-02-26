@@ -821,6 +821,7 @@ h1 {
   height: 2vh;
   letter-spacing: .2rem;
   margin-top: 1rem;
+  height: 5vh;
 }
 
 @media (min-width: 600px) {
@@ -837,6 +838,40 @@ h1 {
     height: 10vh;
     margin-top: 2rem;
   }
+}
+
+.food-content {
+  height: 50vh;
+}
+
+/* .food-content-images{
+    height: 25rem;
+    border-style: double;
+    border-width: 1rem;
+    border-color: color(complementary);
+
+} */
+.food-content-1 {
+  height: 25vh;
+  position: relative;
+  text-align: center;
+  background-image: url("../media/churros2.0.jpg");
+  background-size: cover;
+  border-style: double;
+  border-width: 1rem;
+  border-color: rgba(232, 176, 166, 0.514);
+}
+
+.food-content-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: 'Bangers', cursive;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
 }
 
 html {
