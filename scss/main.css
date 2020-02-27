@@ -850,7 +850,8 @@ h1 {
     border-width: 1rem;
     border-color: color(complementary);
 
-} */
+}
+ */
 .food-content-1 {
   height: 25vh;
   position: relative;
@@ -862,7 +863,15 @@ h1 {
   border-color: rgba(232, 176, 166, 0.514);
 }
 
+.food-content-1:hover {
+  background-size: cover;
+  -webkit-transition: height 0.5s ease-out;
+  transition: height 0.5s ease-out;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/churros2.0.jpg");
+}
+
 .food-content-text {
+  height: 25vh;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -872,6 +881,11 @@ h1 {
   font-size: 2rem;
   text-align: center;
   color: white;
+  opacity: 0;
+}
+
+.food-content-text:hover {
+  opacity: 1;
 }
 
 html {
