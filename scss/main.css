@@ -810,7 +810,7 @@ h1 {
 
 .food {
   margin: 0rem;
-  height: 70vh;
+  height: 100vh;
 }
 
 .food-title {
@@ -841,26 +841,26 @@ h1 {
 }
 
 .food-content {
-  height: 50vh;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-/* .food-content-images{
-    height: 25rem;
-    border-style: double;
-    border-width: 1rem;
-    border-color: color(complementary);
-
-}
- */
 .food-content-1 {
   height: 25vh;
   position: relative;
   text-align: center;
   background-image: url("../media/churros2.0.jpg");
   background-size: cover;
-  border-style: double;
-  border-width: 1rem;
-  border-color: rgba(232, 176, 166, 0.514);
+  margin-bottom: 1.5rem;
 }
 
 .food-content-1:hover {
@@ -871,21 +871,116 @@ h1 {
 }
 
 .food-content-text {
-  height: 25vh;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   font-family: 'Bangers', cursive;
   font-size: 2rem;
   text-align: center;
   color: white;
+  position: absolute;
   opacity: 0;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 20vh;
+  width: 100%;
 }
 
 .food-content-text:hover {
   opacity: 1;
+}
+
+.food-content-2 {
+  height: 25vh;
+  position: relative;
+  text-align: center;
+  background-image: url("../media/paella.jpg");
+  background-size: cover;
+  margin-bottom: 1.5rem;
+}
+
+.food-content-2:hover {
+  background-size: cover;
+  -webkit-transition: height 0.5s ease-out;
+  transition: height 0.5s ease-out;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/paella.jpg");
+}
+
+.food-content-3 {
+  height: 25vh;
+  position: relative;
+  text-align: center;
+  background-image: url("../media/cremacatalana.jpg");
+  background-size: cover;
+  margin-bottom: 1.5rem;
+}
+
+.food-content-3:hover {
+  background-size: cover;
+  -webkit-transition: height 0.5s ease-out;
+  transition: height 0.5s ease-out;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/cremacatalana.jpg");
+}
+
+.title-divider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0;
+}
+
+.title-divider .section-divider-1 {
+  width: 51%;
+  height: 2rem;
+  background-color: white;
+  -webkit-transform: skewY(7deg);
+          transform: skewY(7deg);
+}
+
+@media (min-width: 600px) {
+  .title-divider .section-divider-1 {
+    -webkit-transform: skewY(6deg);
+            transform: skewY(6deg);
+    height: 4rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .title-divider .section-divider-1 {
+    -webkit-transform: skewY(4deg);
+            transform: skewY(4deg);
+    height: 5rem;
+  }
+}
+
+.title-divider .section-divider-2 {
+  width: 51%;
+  height: 2rem;
+  background-color: white;
+  -webkit-transform: skewY(-7deg);
+          transform: skewY(-7deg);
+}
+
+@media (min-width: 600px) {
+  .title-divider .section-divider-2 {
+    -webkit-transform: skewY(-6deg);
+            transform: skewY(-6deg);
+    height: 4rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .title-divider .section-divider-2 {
+    -webkit-transform: skewY(-4deg);
+            transform: skewY(-4deg);
+    height: 5rem;
+  }
 }
 
 html {
