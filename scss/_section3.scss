@@ -7,7 +7,7 @@
         height: 70vh;
     }
     @include desktop{
-        height: 130vh;
+        height: 160vh;
     }
 }
 
@@ -48,7 +48,8 @@
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
-        height: 130vh;       
+        height: 138vh;  
+        margin-bottom: 2rem;;     
     }
 
 }
@@ -106,7 +107,7 @@
     }
     @include desktop{
         top: 50%;
-        height: 25vh;
+        height: 69vh;
         margin: 0rem;
         font-size: 4rem;
         display: flex;
@@ -176,6 +177,7 @@
         margin-bottom: 0rem;
         background-image: url("../media/cremacatalana.jpg");
         background-size: cover; 
+        margin: -4rem;
     }
 
 }
