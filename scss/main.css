@@ -838,7 +838,7 @@ p {
 
 .food {
   margin: 0rem;
-  height: 100vh;
+  height: 90vh;
 }
 
 @media (min-width: 600px) {
@@ -1164,6 +1164,50 @@ p {
             transform: skewY(-4deg);
     height: 5rem;
   }
+}
+
+.footer {
+  height: 20vh;
+  margin: 0rem;
+  font-size: 5rem;
+}
+
+.footer-content {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.fa {
+  padding: 2rem;
+  width: 5rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-instagram {
+  background: rgba(232, 176, 166, 0.514);
+  color: white;
+}
+
+.fa-twitter {
+  background: rgba(232, 176, 166, 0.514);
+  color: white;
+}
+
+.fa-facebook {
+  background: rgba(232, 176, 166, 0.514);
+  color: white;
 }
 
 html {

@@ -1,0 +1,41 @@
+@import "./_variables.scss";
+
+.footer{
+    height: 20vh;
+    margin: 0rem;
+    font-size: 5rem;
+}
+
+.footer-content{
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.fa{
+    padding: 2rem;
+    width: 5rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover{
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    background: color(complementary);
+    color: white;
+  }
+
+  .fa-twitter{
+      background: color(complementary);
+      color: white;
+  }
+
+  .fa-facebook{
+    background: color(complementary);
+    color: white;
+  }
