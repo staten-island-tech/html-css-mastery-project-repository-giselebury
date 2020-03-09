@@ -675,7 +675,7 @@ h1 {
 
 .activity-two-content {
   height: 12.2rem;
-  margin-right: 12rem;
+  margin-right: 7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1172,6 +1172,18 @@ p {
   font-size: 5rem;
 }
 
+@media (min-width: 600px) {
+  .footer {
+    font-size: 8rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .footer {
+    font-size: 10rem;
+  }
+}
+
 .footer-content {
   margin: 1rem;
   display: -webkit-box;
@@ -1181,6 +1193,26 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 600px) {
+  .footer-content {
+    margin: 3rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .footer-content {
+    margin: 5rem;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .fa {
@@ -1189,6 +1221,18 @@ p {
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
+}
+
+@media (min-width: 600px) {
+  .fa {
+    width: 8rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .fa {
+    width: 10rem;
+  }
 }
 
 .fa:hover {
