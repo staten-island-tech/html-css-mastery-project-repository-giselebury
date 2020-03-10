@@ -71,7 +71,7 @@
         height: 17rem;
     }
     @include desktop{
-        height: 22rem;
+        height: 24rem;
     }
 }
 
@@ -148,6 +148,8 @@ p{
     }
     @include desktop{
         font-size: 2rem;
+        width: 50%;
+        margin: 4rem;
     }
 }
 

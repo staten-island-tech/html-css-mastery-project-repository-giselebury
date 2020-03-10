@@ -1,0 +1,52 @@
+@import "./_variables.scss";
+
+.navigation_checkbox{
+    display: none;
+}
+
+.navigation_button{
+    background-color: color(secondary);
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+    z-index: 2000;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.1);
+    text-align: center;
+    cursor: pointer;
+}
+
+.navigation_icon{
+    position: relative;
+    margin-top: 3.5rem;
+}
+
+.navigation_icon::before, .navigation_icon::after{
+    content: "";
+}
+
+.navigation_icon::before{
+    position: absolute;
+    top: -.8rem;
+    left: 0;
+}
+
+.navigation_icon::after{
+    position: absolute;
+    top: .8rem;
+    left: 0;
+}
+
+.navigation_icon, .navigation_icon:before, .navigation_icon:after{
+    width: 3rem;
+    height: 2px;
+    background-color: #333;
+    display: inline-block;
+    transition: all .2s;
+}
+
+.navigation_button:hover .navigation_icon::before{
+    top: -1rem;
+}
