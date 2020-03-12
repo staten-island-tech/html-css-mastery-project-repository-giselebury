@@ -55,13 +55,18 @@
     justify-content: space-around;
     flex-direction: row;   
     text-align: center;
+    font-size: 1rem;
     @include tablet{
         height: 18.2rem;
         margin-left: 18rem;
+        font-size: 1.5rem;
     }
     @include desktop{
         height: 25.2rem;
         margin-left: 22rem;
+        font-size: 2rem;
+        width: 50%;
+        margin-top: 4rem;
     }
 }
 
@@ -97,13 +102,18 @@
     justify-content: space-around;
     flex-direction: row;   
     text-align: center;
+    font-size: 1rem;
     @include tablet{
         height: 18.2rem;
         margin-right: 18rem;
+        font-size: 1.5rem;
     }
     @include desktop{
         height: 25.2rem;
         margin-right: 22rem;
+        font-size: 2rem;
+        width: 50%;
+        margin: 4rem;
     }
 }
 
@@ -131,27 +141,32 @@
     justify-content: space-around;
     flex-direction: row;   
     text-align: center;
+    font-size: 1rem;
     @include tablet{
         height: 18.2rem;
         margin-left: 18rem;
+        font-size: 1.5rem;
     }
     @include desktop{
         height: 25.2rem;
         margin-left: 22rem;
+        font-size: 2rem;
+        width: 50%;
+        margin-top: 4rem;
     }
 }
 
-p{
-    font-size: 1rem;
-    @include tablet{
-        font-size: 1.5rem;
-    }
-    @include desktop{
-        font-size: 2rem;
-        width: 50%;
-        margin: 4rem;
-    }
-}
+// p{
+//     font-size: 1rem;
+//     @include tablet{
+//         font-size: 1.5rem;
+//     }
+//     @include desktop{
+//         font-size: 2rem;
+//         width: 50%;
+//         margin: 4rem;
+//     }
+// }
 
 .title-divider{
     display: flex;

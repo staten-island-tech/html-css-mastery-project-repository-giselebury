@@ -621,12 +621,14 @@ h1 {
       -ms-flex-direction: row;
           flex-direction: row;
   text-align: center;
+  font-size: 1rem;
 }
 
 @media (min-width: 600px) {
   .activity-one-content {
     height: 18.2rem;
     margin-left: 18rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -634,6 +636,9 @@ h1 {
   .activity-one-content {
     height: 25.2rem;
     margin-left: 22rem;
+    font-size: 2rem;
+    width: 50%;
+    margin-top: 4rem;
   }
 }
 
@@ -689,12 +694,14 @@ h1 {
       -ms-flex-direction: row;
           flex-direction: row;
   text-align: center;
+  font-size: 1rem;
 }
 
 @media (min-width: 600px) {
   .activity-two-content {
     height: 18.2rem;
     margin-right: 18rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -702,6 +709,9 @@ h1 {
   .activity-two-content {
     height: 25.2rem;
     margin-right: 22rem;
+    font-size: 2rem;
+    width: 50%;
+    margin: 4rem;
   }
 }
 
@@ -742,12 +752,14 @@ h1 {
       -ms-flex-direction: row;
           flex-direction: row;
   text-align: center;
+  font-size: 1rem;
 }
 
 @media (min-width: 600px) {
   .activity-three-content {
     height: 18.2rem;
     margin-left: 18rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -755,24 +767,9 @@ h1 {
   .activity-three-content {
     height: 25.2rem;
     margin-left: 22rem;
-  }
-}
-
-p {
-  font-size: 1rem;
-}
-
-@media (min-width: 600px) {
-  p {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 1100px) {
-  p {
     font-size: 2rem;
     width: 50%;
-    margin: 4rem;
+    margin-top: 4rem;
   }
 }
 
