@@ -554,7 +554,7 @@ h1 {
 
 @media (min-width: 1100px) {
   .activities {
-    height: 145vh;
+    height: 135vh;
   }
 }
 
@@ -581,7 +581,7 @@ h1 {
   .activities-title {
     font-size: 4rem;
     height: 10vh;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 }
 
@@ -635,9 +635,9 @@ h1 {
 @media (min-width: 1100px) {
   .activity-one-content {
     height: 25.2rem;
-    margin-left: 32rem;
+    margin-left: 22rem;
     font-size: 2rem;
-    width: 70%;
+    width: 50%;
     margin-top: 4rem;
   }
 }
@@ -708,10 +708,10 @@ h1 {
 @media (min-width: 1100px) {
   .activity-two-content {
     height: 25.2rem;
-    margin-left: 8rem;
+    margin-right: 22rem;
     font-size: 2rem;
-    width: 70%;
-    margin-top: 4rem;
+    width: 50%;
+    margin: 4rem;
   }
 }
 
@@ -766,26 +766,10 @@ h1 {
 @media (min-width: 1100px) {
   .activity-three-content {
     height: 25.2rem;
-    margin-left: 32rem;
+    margin-left: 22rem;
     font-size: 2rem;
-    width: 70%;
+    width: 50%;
     margin-top: 4rem;
-  }
-}
-
-.activity-text {
-  font-size: 1rem;
-}
-
-@media (min-width: 600px) {
-  .activity-text {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 1100px) {
-  .activity-text {
-    margin-right: 5rem;
   }
 }
 

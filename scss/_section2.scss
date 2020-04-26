@@ -3,12 +3,11 @@
 .activities{
     margin: 0rem;
     height: 65vh;
-
     @include tablet{
         height: 72vh;
     }
     @include desktop {
-        height: 145vh;
+        height: 135vh;
     }
 }
 
@@ -30,7 +29,7 @@
     @include desktop{
         font-size: 4rem;
         height: 10vh;
-        margin-top: 4rem;
+        margin-top: 2rem;
     }
 }
 
@@ -64,9 +63,9 @@
     }
     @include desktop{
         height: 25.2rem;
-        margin-left: 32rem;
+        margin-left: 22rem;
         font-size: 2rem;
-        width: 70%;
+        width: 50%;
         margin-top: 4rem;
     }
 }
@@ -111,10 +110,10 @@
     }
     @include desktop{
         height: 25.2rem;
-        margin-left: 8rem;
+        margin-right: 22rem;
         font-size: 2rem;
-        width: 70%;
-        margin-top: 4rem;
+        width: 50%;
+        margin: 4rem;
     }
 }
 
@@ -150,9 +149,9 @@
     }
     @include desktop{
         height: 25.2rem;
-        margin-left: 32rem;
+        margin-left: 22rem;
         font-size: 2rem;
-        width: 70%;
+        width: 50%;
         margin-top: 4rem;
     }
 }
@@ -168,16 +167,6 @@
 //         margin: 4rem;
 //     }
 // }
-
-.activity-text{
-    font-size: 1rem;
-    @include tablet{
-        font-size: 1.5rem;
-    }
-    @include desktop{
-        margin-right: 5rem;
-    }
-}
 
 .title-divider{
     display: flex;
