@@ -274,7 +274,7 @@ h1 {
 .card-side {
   height: 21rem;
   width: 15rem;
-  font-size: 15px;
+  font-size: 1rem;
   color: white;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -286,6 +286,7 @@ h1 {
   .card-side {
     height: 28rem;
     width: 18rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -293,6 +294,7 @@ h1 {
   .card-side {
     height: 40rem;
     width: 25rem;
+    font-size: 2rem;
   }
 }
 
@@ -554,7 +556,7 @@ h1 {
 
 @media (min-width: 1100px) {
   .activities {
-    height: 135vh;
+    height: 145vh;
   }
 }
 
@@ -581,7 +583,7 @@ h1 {
   .activities-title {
     font-size: 4rem;
     height: 10vh;
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
 }
 
@@ -635,9 +637,9 @@ h1 {
 @media (min-width: 1100px) {
   .activity-one-content {
     height: 25.2rem;
-    margin-left: 22rem;
+    margin-left: 32rem;
     font-size: 2rem;
-    width: 50%;
+    width: 70%;
     margin-top: 4rem;
   }
 }
@@ -680,7 +682,7 @@ h1 {
 
 .activity-two-content {
   height: 12.2rem;
-  margin-right: 12rem;
+  margin-right: 7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -708,10 +710,10 @@ h1 {
 @media (min-width: 1100px) {
   .activity-two-content {
     height: 25.2rem;
-    margin-right: 22rem;
+    margin-left: 8rem;
     font-size: 2rem;
-    width: 50%;
-    margin: 4rem;
+    width: 70%;
+    margin-top: 4rem;
   }
 }
 
@@ -766,10 +768,26 @@ h1 {
 @media (min-width: 1100px) {
   .activity-three-content {
     height: 25.2rem;
-    margin-left: 22rem;
+    margin-left: 32rem;
     font-size: 2rem;
-    width: 50%;
+    width: 70%;
     margin-top: 4rem;
+  }
+}
+
+.activity-text {
+  font-size: 1rem;
+}
+
+@media (min-width: 600px) {
+  .activity-text {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .activity-text {
+    margin-right: 5rem;
   }
 }
 
@@ -1171,6 +1189,18 @@ h1 {
   font-size: 5rem;
 }
 
+@media (min-width: 600px) {
+  .footer {
+    font-size: 8rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .footer {
+    font-size: 10rem;
+  }
+}
+
 .footer-content {
   margin: 1rem;
   display: -webkit-box;
@@ -1180,6 +1210,26 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 600px) {
+  .footer-content {
+    margin: 3rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .footer-content {
+    margin: 5rem;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .fa {
@@ -1188,6 +1238,18 @@ h1 {
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
+}
+
+@media (min-width: 600px) {
+  .fa {
+    width: 8rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .fa {
+    width: 10rem;
+  }
 }
 
 .fa:hover {
@@ -1209,158 +1271,6 @@ h1 {
   color: white;
 }
 
-<<<<<<< HEAD
-=======
-.navigation_checkbox {
-  display: none;
-}
-
-.navigation_button {
-  background-color: white;
-  height: 7rem;
-  width: 7rem;
-  border-radius: 50%;
-  position: fixed;
-  top: 6rem;
-  right: 6rem;
-  z-index: 2000;
-  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
-  text-align: center;
-  cursor: pointer;
-}
-
-.navigation_icon {
-  position: relative;
-  margin-top: 3.5rem;
-}
-
-.navigation_icon::before, .navigation_icon::after {
-  content: "";
-}
-
-.navigation_icon::before {
-  position: absolute;
-  top: -.8rem;
-  left: 0;
-}
-
-.navigation_icon::after {
-  position: absolute;
-  top: .8rem;
-  left: 0;
-}
-
-.navigation_icon, .navigation_icon:before, .navigation_icon:after {
-  width: 3rem;
-  height: 2px;
-  background-color: #333;
-  display: inline-block;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-}
-
-.navigation_button:hover .navigation_icon::before {
-  top: -1rem;
-}
-
-.navigation_button:hover .navigation_icon::after {
-  top: -1rem;
-}
-
-.navigation_checkbox:checked + .navigation_button .navigation_icon {
-  background-color: transparent;
-}
-
-.navigation_checkbox:checked + .navigation_button .navigation_icon::before {
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-  top: 0;
-}
-
-.navigation_checkbox:checked + .navigation_button .navigation_icon::after {
-  -webkit-transform: rotate(-135deg);
-          transform: rotate(-135deg);
-  top: 0;
-}
-
-.navigation_list {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  list-style: none;
-  text-align: center;
-  width: 100%;
-}
-
-.navigation_item {
-  margin: 1rem;
-}
-
-.navigation_nav {
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1500;
-  opacity: 1;
-  width: 0%;
-  -webkit-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.navigation_background {
-  height: 6rem;
-  width: 6rem;
-  border-radius: 50%;
-  position: fixed;
-  top: 6.5rem;
-  right: 6.5rem;
-  background-image: radial-gradient(#2998ff, #28b499);
-  z-index: 1000;
-  -webkit-transition: -webkit-transform .8s;
-  transition: -webkit-transform .8s;
-  transition: transform .8s;
-  transition: transform .8s, -webkit-transform .8s;
-  -webkit-transform: scale(80);
-          transform: scale(80);
-}
-
-.navigation_link, .navigation_link:link, .navigation_link:visited {
-  display: inline-block;
-  font-size: 3rem;
-  font-weight: 300;
-  padding: 1rem 2rem;
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
-  background-size: 240%;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-}
-
-.navigation_link:hover, .navigation_link:activate {
-  background-position: 100%;
-  color: #2998ff;
-  -webkit-transform: translateX(1rem);
-          transform: translateX(1rem);
-}
-
-.navigation_checkbox:checked ~ .navigation_background {
-  -webkit-transform: scale(0);
-          transform: scale(0);
-}
-
-.navigation_checkbox:checked ~ .navigation_nav {
-  opacity: 0;
-  width: 100%;
-  z-index: 200;
-}
-
->>>>>>> parent of 3cf5338... nav bar
 html {
   margin: 0;
   padding: 0;
